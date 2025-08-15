@@ -5,8 +5,23 @@ window.onload = function() {
 function welcomeSpeech() {
     let userName = prompt("What is your name?");
     if (userName && userName.trim() !== '') {
-        document.querySelector('.hero-left .pre-title').innerHTML = `Halo ${userName}! Nama Saya Adalah`;
+        let target = document.querySelector('.hero-left .pre-title');
+        let text = `Halo ${userName}! Nama Saya Adalah`;
+        typeWriter(target, text, 50);
     }
+}
+
+function typeWriter(element, text, speed) {
+    element.textContent = '';
+    let i = 0;
+    function typing() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(typing, speed);
+        }
+    }
+    typing();
 }
 
 
