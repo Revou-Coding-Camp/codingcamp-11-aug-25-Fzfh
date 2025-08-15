@@ -158,7 +158,7 @@ a {
   }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:450px) {
   .btn{
     display: none;
   }
@@ -167,7 +167,7 @@ a {
     padding: 1rem 0;
   }
   nav ul {
-    font-size: 8pt;
+    font-size: 6pt;
     gap: 3px;
   }
   .pre-title{
@@ -200,7 +200,7 @@ a {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   margin-right: 50px;
 }
 /* Navigation Menu */
