@@ -1,3 +1,15 @@
+window.onload = function() {
+    welcomeSpeech();
+};
+
+function welcomeSpeech() {
+    let userName = prompt("What is your name?");
+    if (userName && userName.trim() !== '') {
+        document.querySelector('.hero-left .pre-title').innerHTML = `Halo ${userName}! Nama Saya Adalah`;
+    }
+}
+
+
 function tampilkanPesan(event) {
   event.preventDefault();
 
