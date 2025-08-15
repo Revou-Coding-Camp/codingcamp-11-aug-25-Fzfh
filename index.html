@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/codingcamp-11-aug-25-Fzfh/css/portfolio.css" />
+    <script src="/codingcamp-11-aug-25-Fzfh/js/portfolio.js"></script>
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="icon" href="logo.png">
+    <title>Portfolio ZriiXD</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="">
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Our Proflie</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Message US</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+      <div class="main-container">
+
+        <section id="hero">
+          <div class="hero-left">
+            <h3 class="pre-title">Halo! Nama Saya Adalah</h3>
+            <h1 class="hero-name">Muhamad <span>Fazri</span> Hafiz</h1>
+            <p>
+              Saya adalah siswa dari <b>SMK TI DWIGUNA</b> dengan jurusan pplg <i>(pengembangan perangkat lunak dan gim)</i>. <br> Ini adalah website dari tugas <b>revoU</b>, Saya sangat berantusias untuk mengikuti segala tugas dan juga materi yang diberikan <b>revoU</b>. Karena saya sangat suka mengoding.
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <img src="/codingcamp-11-aug-25-Fzfh/media/gw.png" alt="Person Standing" />
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Services -->
+    <section id="services">
+      <div class="services main-container">
+        <!-- <h3 class="pre-title">Services</h3> -->
+        <h1 class="section-title services-title">Location School</h1>
+
+        <div class="grid-3">
+            <!--SERVICE KE 1-->
+           <div class="service">
+               <div class="service-icon">
+                    <img src="/codingcamp-11-aug-25-Fzfh/media/dg.png" alt="">
+               </div>
+               <h4>SMK TI Dwiguna</h4>
+            </div>
+            <!--SERVICE KE 2-->
+           <div class="service">
+               <div class="service-icon">
+                <img src="/codingcamp-11-aug-25-Fzfh/media/af.jpeg" alt="">
+               </div>
+               <h4>SMP Al-Farabi</h4>
+            </div>
+            <!--SERVICE KE 3-->
+           <div class="service">
+               <div class="service-icon">
+                   <img src="/codingcamp-11-aug-25-Fzfh/media/yapas.jpeg" alt="">
+               </div>
+               <h4>MI Al-Falah</h4>
+            </div>
+       </div>
+      </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1 class="section-title services-title">MESSAGE US</h1>
+      <div class="contact main-container">
+          <div onclick="" id="pesan" class="contact-left">
+          <form
+            onsubmit="tampilkanPesan(event)"
+            class="contact-form"
+            >
+            <div>
+                <label for=""><strong>Nama:</strong></label>
+                <input type="text" placeholder="Name" name="name" id="name" />
+            </div>
+            <div>
+                <label for=""><strong>Tanggal Lahir: </strong></label>
+                <input type="date" id="ttl">
+            </div>
+            <div>
+                <label><strong>Jenis Kelamin:</strong></label><br>
+
+                <input type="radio" name="gender" value="Laki-Laki" id="male">
+                <label for="male">Laki-Laki</label>
+
+                <input type="radio" name="gender" value="Perempuan" id="female">
+                <label for="female">Perempuan</label>
+
+
+            </div>
+            <div>
+                <label for=""><strong>Buat Pesanan: </strong></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Buat Pesan"></textarea>
+            </div>
+            <div>
+                <button class="btn-submit">Kirim Pesan</button>
+            </div>
+            </form>
+        </div>
+        <div class="contact-right" id="output"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Fomter -->
+    <footer>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/fzfh_aura?igsh=MXFrcm54aWc3YmozNA==">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://github.com/Fzfh">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p>&#169; 2025 - Made By ZriiXD</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="zriixd.js"></script>
+  </body>
 </html>
