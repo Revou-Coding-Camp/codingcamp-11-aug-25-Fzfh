@@ -168,7 +168,7 @@ a {
   }
   nav ul {
     font-size: 6pt;
-    gap: 3px;
+    gap: 2px;
   }
   .pre-title{
     font-size: 0.7rem;
@@ -201,7 +201,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 3rem;
-  margin-right: 50px;
+  margin-right: 15px;
 }
 /* Navigation Menu */
 nav ul li {
