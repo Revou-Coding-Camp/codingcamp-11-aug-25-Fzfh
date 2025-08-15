@@ -178,11 +178,10 @@ a {
     font-size: 2rem;
   }
   .hero-left p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.5rem;
+    line-height: 1rem;
   }
 }
-
 
 /* Logo */
 .logo {
