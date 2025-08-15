@@ -200,7 +200,7 @@ a {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-right: 50px;
 }
 /* Navigation Menu */
